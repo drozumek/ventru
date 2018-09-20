@@ -1,0 +1,45 @@
+            <svg version="1.1" id="svg-upload" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <path fill="none" stroke="#F5F5DC" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M24,34L32,26L	40,34" class="svg-upload_0"></path>
+                <g>
+	               <path fill="none" stroke="#F5F5DC" stroke-width="2" stroke-miterlimit="10" d="M32,26L32,58" class="svg-upload_1"></path>
+                </g>
+                <path fill="none" stroke="#F5F5DC" stroke-width="2" stroke-miterlimit="10" d="M24,42L1,42L1,6L63,6L63,42L40,42" class="svg-upload_2"></path>
+
+<style>
+.svg-upload_0 {
+    stroke-dasharray: 23 25;
+    stroke-dashoffset: 24;
+    animation: svg-upload_draw 2500ms linear 100ms forwards;
+}
+
+.svg-upload_1 {
+    stroke-dasharray: 32 34;
+    stroke-dashoffset: 33;
+    animation: svg-upload_draw 2500ms linear 100ms forwards;
+}
+
+.svg-upload_2 {
+    stroke-dasharray: 180 182;
+    stroke-dashoffset: 181;
+    animation: svg-upload_draw 2500ms linear 100ms forwards;
+}
+
+@keyframes svg-upload_draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes svg-upload_fade {
+    0% {
+        stroke-opacity: 1;
+    }
+    94% {
+        stroke-opacity: 1;
+    }
+    100% {
+        stroke-opacity: 0;
+    }
+}
+</style>
+</svg>

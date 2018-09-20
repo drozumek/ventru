@@ -1,0 +1,12 @@
+{
+  "name": "Ventru",
+  "version": "1.0.0",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Tworzymy najlepsze sklepy i strony internetowe",
+  "icons": {
+    "src": "icon.svg",
+    "sizes": "any",
+    "type": "image/svg+xml"
+  }
+}

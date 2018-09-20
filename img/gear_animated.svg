@@ -1,0 +1,42 @@
+            <svg version="1.1" id="svg-gear" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <g>
+                    <path fill="none" stroke="#F5F5DC" stroke-width="2" stroke-miterlimit="10" d="M32,1L26,1L26,10L20,12L14,6L6,14L12,20L
+                        10,26L1,26L1,38L10,38L12,44L6,50L14,58L20,52L26,54L26,63L32,63L38,63L38,54L44,52L50,58L58,50L52,44L54,38L63,38L63,26L54,26L
+                        52,20L58,14L50,6L44,12L38,10L38,1Z" class="svg-gear_0"></path>
+                    <path fill="none" stroke="#F5F5DC" stroke-width="2" stroke-miterlimit="10" d="M26,32A6,6 0,1,1 38,32A6,6 0,1,1 26,32" class="svg-gear_1"></path>
+                </g>
+
+
+<style>
+.svg-gear_0 {
+    stroke-dasharray:284 286;
+    stroke-dashoffset:285;
+    animation: svg-gear_draw 2500ms linear 100ms forwards;
+}
+
+.svg-gear_1 {
+    stroke-dasharray:38 40;
+    stroke-dashoffset:39;
+    animation: svg-gear_draw 2500ms linear 100ms forwards;
+}
+
+@keyframes svg-gear_draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes svg-gear_fade {
+    0% {
+        stroke-opacity: 1;
+    }
+    94% {
+        stroke-opacity: 1;
+    }
+    100% {
+        stroke-opacity: 0;
+    }
+}
+
+</style>
+</svg>
