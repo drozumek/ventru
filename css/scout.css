@@ -1,0 +1,19 @@
+.scout-container {
+
+}
+.scout-item, .scout:not(.scout-container) {
+    opacity: 0;
+    -webkit-transform: transform .3s cubic-bezier(0.4, 0.0, 0.2, 1), opacity .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    -ms-transform: transform .3s cubic-bezier(0.4, 0.0, 0.2, 1), opacity .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform .3s cubic-bezier(0.4, 0.0, 0.2, 1), opacity .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.scout-item.no-fade {
+    opacity: 1;
+}
+.scout-item[data-animation="animate"],
+.scout:not(.scout-container)[data-animation="animate"] {
+    -ms-transform: translate(0, 0) !important;
+    -webkit-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+    opacity: 1 !important;
+}

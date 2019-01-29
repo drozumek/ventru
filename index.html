@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="pl" prefix="og: http://ogp.me/ns#">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Ventru - sklepy i strony internetowe</title>
+    <title>Ventru - profesjonalne sklepy i strony internetowe</title>
     <meta name=description content="Tworzymy szybkie, nowoczesne strony i sklepy internetowe."/>
 
-    <link rel="icon" sizes="any" type="image/svg+xml" href="icon.svg">  	<!-- Specifies that the icon is scalable (like an SVG image) -->
+    <link rel="icon" sizes="any" type="image/svg+xml" href="icon.svg">
+    <!-- Specifies that the icon is scalable (like an SVG image) -->
     <link rel="apple-touch-icon" sizes="any" type="image/svg+xml" href="icon.svg">
-    <link rel="manifest" href="manifest.json"> <!-- for PWA -->
+    <!--    <link rel="manifest" href="manifest.json"> &lt;!&ndash; for PWA &ndash;&gt;-->
 
     <!-- The best way to incorporate a favicon for Windows 8 is to use the following code: -->
-    <meta name="msapplication-TileColor" content="#D83434">
-    <meta name="msapplication-TileImage" content="icon.svg">
+    <!--    <meta name="msapplication-TileColor" content="#D83434">-->
+    <!--    <meta name="msapplication-TileImage" content="icon.svg">-->
     <!-- The first line is the tile color, you can use a hex value, RGB or a CSS color name. The second line is the path to the icon. For best results the icon should be transparent and sized at 144x144 pixels. -->
 
 
@@ -24,14 +25,17 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css?ver=1">
+    <!--    <link rel="stylesheet" href="css/scout.css">-->
 
 
     <!--JAVASCRIPT-->
+    <!--<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmZKVtBQkBJ25OUKOonTR-aJR_Hdv01ZM&callback=initMap"-->
+    <!--type="text/javascript"></script>-->
 
     <script src="https://polyfill.io/v2/polyfill.js?features=IntersectionObserver"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.15.0/lazyload.min.js"></script>
+    <script defer src="js/swipe.min.js"></script>
     <script defer src="js/main.js"></script>
-
+    <script defer src="js/scout.js"></script>
 
 
     <!--To install the global tracking snippet, copy the following code and paste it immediately after the <head> tag on every page of your site. Replace GA_TRACKING_ID with the tracking ID of the Google Analytics property to which you want to send data. You need only one global snippet per page.-->
@@ -41,627 +45,866 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'GA_TRACKING_ID');
     </script>
 
 
-
-
 </head>
 <body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
 <div class="preloader"></div>
+<div class="wrapper">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+            href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-<!--
-================================
-Header Area Start
-=================================
- -->
-<header>
-    <div class="header-preloader">
-        <div class="top-bar">
-            <div class="container d-flex align-items-end h-100">
-                <div class="logo">
-                    <img src="https://ventru.dev/wp-content/uploads/2017/12/deep-logo-corp-3.png" height="100%" alt="">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">USŁUGI</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">KONTAKT</a></li>
-                    </ul>
-                </nav>
-                <div class="top-bar__right">
-                    <div class="socials">
-                        <div class="socials__item">
-                            <a href="">
-                                <?xml version="1.0" encoding="iso-8859-1"?>
-                                <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
-                                <g>
-                                    <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" fill="#6b6b6b"/>
-                                </g>
-                            </svg>
-                            </a>
-                        </div>
-                        <div class="socials__item">
-                            <a href="">
-                                <?xml version="1.0" encoding="iso-8859-1"?>
-                                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 95.926 95.926" style="enable-background:new 0 0 95.926 95.926;" xml:space="preserve">
-                                <g>
-                                    <path d="M47.893,47.221c11.768,0,21.341-10.592,21.341-23.611S59.66,0,47.893,0C36.125,0,26.55,10.592,26.55,23.61    C26.55,36.63,36.125,47.221,47.893,47.221z" fill="#6b6b6b"/>
-                                    <path d="M72.477,44.123c-1.244-0.269-2.524,0.272-3.192,1.355C61.65,57.847,49.34,58.204,47.962,58.204    s-13.687-0.357-21.32-12.722c-0.67-1.085-1.953-1.628-3.198-1.354C6.868,47.777,2.497,72.798,3.789,93.115    c0.101,1.58,1.411,2.811,2.994,2.811h82.36c1.583,0,2.894-1.23,2.993-2.811C93.429,72.775,89.057,47.74,72.477,44.123z" fill="#6b6b6b"/>
-                                </g>
-                            </svg>
-                            </a>
-                        </div>
-                        <div class="socials__item">
-                            <a href="">
-                                <?xml version="1.0" encoding="iso-8859-1"?>
-                                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 96.264 96.264" style="enable-background:new 0 0 96.264 96.264;" xml:space="preserve">
-                                <g>
-                                    <path d="M94.264,17.132H2c-1.104,0-2,0.896-2,2v58c0,1.104,0.896,2,2,2h92.264c1.104,0,2-0.896,2-2v-58   C96.264,18.028,95.367,17.132,94.264,17.132z M90.929,32.189c0,0.531-0.28,1.023-0.739,1.293L59.316,51.651l28.373,16.689   c0.459,0.27,0.739,0.761,0.739,1.293v2.021c0,0.525-0.274,1.012-0.723,1.283c-0.238,0.145-0.507,0.217-0.777,0.217   c-0.237,0-0.478-0.057-0.694-0.17L52.793,55.489l-3.891,2.289c-0.469,0.276-1.051,0.277-1.521,0l-3.908-2.299L10.031,72.983   c-0.465,0.244-1.024,0.226-1.473-0.045c-0.449-0.271-0.723-0.759-0.723-1.283v-2.021c0-0.531,0.281-1.023,0.739-1.293   l28.374-16.698L6.074,33.482c-0.458-0.27-0.739-0.761-0.739-1.293v-7.581c0-0.525,0.274-1.011,0.723-1.283   c0.449-0.271,1.007-0.289,1.472-0.046l40.61,21.247l40.593-21.247c0.465-0.244,1.023-0.225,1.473,0.046s0.723,0.758,0.723,1.283   L90.929,32.189L90.929,32.189z" fill="#6b6b6b"/>
-                                </g>
-                            </svg>
-                            </a>
-                        </div>
-                        <div class="tooltip-facebook">
-                            Facebook
-                        </div>
-                        <div class="tooltip-login">
-                            Panel Klienta
-                        </div>
-                        <div class="tooltip-contact">
-                            Kontakt
-                        </div>
+
+    <!--
+    ================================
+    Header Area Start
+    =================================
+     -->
+    <header>
+        <div class="header-preloader">
+            <div class="top-bar">
+                <div class="container d-flex align-items-end h-100">
+                    <div class="logo">
+                        <!--<img src="https://ventru.dev/wp-content/uploads/2017/12/deep-logo-corp-3.png" height="100%" alt="">-->
                     </div>
-                    <div class="contact-bar">
-                        <i class="headphone-icon">
-                            $
-                        </i>
-                        <span>
+                    <nav>
+                        <svg class="hamburger hamRotate ml-auto" viewBox="0 0 100 100" width="80">
+                            <path
+                                    class="ham-line top"
+                                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                            <path
+                                    class="ham-line middle"
+                                    d="m 30,50 h 40"/>
+                            <path
+                                    class="ham-line bottom"
+                                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+                        </svg>
+                        <ul class="menu-primary">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">USŁUGI</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">KONTAKT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-bar__right">
+                        <div class="socials">
+                            <div class="socials__item">
+                                <a href="">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="socials__item">
+                                <a href="">
+                                    <i class="icon-user"></i>
+                                </a>
+                            </div>
+                            <div class="socials__item">
+                                <a href="">
+                                    <i class="icon-mail"></i>
+                                </a>
+                            </div>
+                            <div class="tooltip-facebook">
+                                Facebook
+                            </div>
+                            <div class="tooltip-login">
+                                Panel Klienta
+                            </div>
+                            <div class="tooltip-contact">
+                                Kontakt
+                            </div>
+                        </div>
+                        <div class="contact-bar">
+                            <i class="headphone-icon">
+                                $
+                            </i>
+                            <span>
                         791 651 306
                     </span>
-                        <div>
-                            EN
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- slider start -->
-        <div class="hero">
-            <div class="slide-1 slide" data-status="active">
-                <div class="slide-1__right-block">
-                </div>
-                <div class="slide-1__ring-small">
-                    <img src="img/slider-1-ring-small.png" alt="okrąg mały" height="100%">
-                </div>
-                <div class="slide-1__ring-big">
-                    <img src="img/slider-1-ring-big.png" alt="okrąg duży" height="100%">
-                </div>
-                <div class="slide-1__man">
-                    <picture>
-                        <source media="(max-width: 400px)"
-                                srcset="img/slider-1-man-400.png 1x,
-                                    img/slider-1-man-800.png 2x">
-                        <source media="(max-width: 1366px)"
-                                srcset="img/slider-1-man-800.png 1x,
-                                    img/slider-1-man-hd.png 2x">
-                        <img src="img/slider-1-man-hd.png" height="100%" alt="uśmiechnięty mężczyzna przy biurku">
-                    </picture>
-                </div>
-                <div class="slide-1__text-container">
-                    <h1>
-                        <span class="text-profesjonalne" style="white-space: pre-line">PROFESJONALNE</span>
-                        <span class="slide-1__mask-container">
-                        <span class="slide-1__mask-content">
-                            <span class="mask-content__strony">STRONY <span class="mask-content__www">WWW</span></span>
-                            <span class="mask-content__sklepy">SKLEPY <span class="mask-content__internetowe">INTERNETOWE</span></span>
-                        </span>
-                    </span>
-                    </h1>
-                    <p style="line-height: 30px; margin-bottom: 60px"><span>We'll give you brand new and original creative ideas</span> <br>
-                        <span>to bring your campaigns to life...</span>
-                    </p>
-                    <button onclick="start()" role="button">Rozpocznij</button>
-                </div>
-            </div>
-            <!-- end single slider -->
-
-            <div class="slide-1 slide" data-status="unactive">
-                <div class="slide-1__right-block">
-                </div>
-                <div class="slide-1__ring-small">
-                    <img src="img/slider-1-ring-small.png" alt="okrąg mały" height="100%">
-                </div>
-                <div class="slide-1__ring-big">
-                    <img src="img/slider-1-ring-big.png" alt="okrąg duży" height="100%">
-                </div>
-                <div class="slide-1__man">
-                    <picture>
-                        <source media="(max-width: 400px)"
-                                srcset="img/slider-1-man-400.png 1x,
-                                    img/slider-1-man-800.png 2x">
-                        <source media="(max-width: 1366px)"
-                                srcset="img/slider-1-man-800.png 1x,
-                                    img/slider-1-man-hd.png 2x">
-                        <img src="img/slider-1-man-hd.png" height="100%" alt="uśmiechnięty mężczyzna przy biurku">
-                    </picture>
-                </div>
-                <div class="slide-1__text-container">
-                    <h1>
-                        <span class="text-profesjonalne" style="white-space: pre-line">PROFESJONALNE</span>
-                        <span class="slide-1__mask-container">
-                        <span class="slide-1__mask-content">
-                            <span class="mask-content__strony">STRONY <span class="mask-content__www">WWW</span></span>
-                            <span class="mask-content__sklepy">SKLEPY <span class="mask-content__internetowe">INTERNETOWE</span></span>
-                        </span>
-                    </span>
-                    </h1>
-                    <p style="line-height: 30px; margin-bottom: 60px"><span>We'll give you brand new and original creative ideas</span> <br>
-                        <span>to bring your campaigns to life...</span>
-                    </p>
-                    <button role="button">Rozpocznij</button>
-                </div>
-            </div>
-            <!-- end single slider -->
-
-            <div class="slide-1 slide" data-status="unactive">
-                <div class="slide-1__right-block">
-                </div>
-                <div class="slide-1__ring-small">
-                    <img src="img/slider-1-ring-small.png" alt="okrąg mały" height="100%">
-                </div>
-                <div class="slide-1__ring-big">
-                    <img src="img/slider-1-ring-big.png" alt="okrąg duży" height="100%">
-                </div>
-                <div class="slide-1__man">
-                    <picture>
-                        <source media="(max-width: 400px)"
-                                srcset="img/slider-1-man-400.png 1x,
-                                    img/slider-1-man-800.png 2x">
-                        <source media="(max-width: 1366px)"
-                                srcset="img/slider-1-man-800.png 1x,
-                                    img/slider-1-man-hd.png 2x">
-                        <img src="img/slider-1-man-hd.png" height="100%" alt="uśmiechnięty mężczyzna przy biurku">
-                    </picture>
-                </div>
-                <div class="slide-1__text-container">
-                    <h1>
-                        <span class="text-profesjonalne" style="white-space: pre-line">PROFESJONALNE</span>
-                        <span class="slide-1__mask-container">
-                        <span class="slide-1__mask-content">
-                            <span class="mask-content__strony">STRONY <span class="mask-content__www">WWW</span></span>
-                            <span class="mask-content__sklepy">SKLEPY <span class="mask-content__internetowe">INTERNETOWE</span></span>
-                        </span>
-                    </span>
-                    </h1>
-                    <p style="line-height: 30px; margin-bottom: 60px"><span>We'll give you brand new and original creative ideas</span> <br>
-                        <span>to bring your campaigns to life...</span>
-                    </p>
-                    <button role="button">Rozpocznij</button>
-                </div>
-            </div>
-            <!-- end single slider -->
-
-            <!-- slider navigation -->
-            <div class="slider-nav d-flex align-items-center">
-                <button class="prev slider-nav__item" onclick="changeSlide(-1); pauseSlider();" role="button">🠐</button>
-                <button class="next slider-nav__item" onclick="changeSlide(1); pauseSlider();" role="button">🠂</button>
-
-            </div>
-        </div>
-    </div>
-</header>
-<!--
-================================
-Header Area End
-=================================
- -->
-
-<!--
-================================
-Agency Start
-=================================
- -->
-<section class="container agency d-flex justify-content-center" style="margin-bottom:100px">
-    <div class="col-6 agency__left">
-        <img src="http://cdn.deeptem.com/corporate/wp-content/uploads/2017/08/dp-cpr-p04.jpg" alt="przybory na biurku" width="100%">
-    </div>
-    <div class="col-6 agency__right d-flex justify-content-center align-content-center wrap">
-        <h2 class="white-h2 observe"><span>JESTEŚMY</span><br> AGENCJĄ INTERAKTYWNĄ</h2>
-        <p>ZAMIENIC GAFIKE BABELKOW NA WEKTOR!!! We pride ourselves in great work ethic, integrity, and end-results. Our company philosophy is to create the kind of website that most businesses want: easy to find, stylish and appealing, quick loading, mobile responsive and easy to buy from. We are deep group.</p>
-    </div>
-</section>
-<!--
-================================
-Agency End
-=================================
- -->
-
-<!--
-================================
-Services start
-=================================
- -->
-<section class="container text-center services">
-    <div class="col-6" style="transform: translateY(100px)">
-        <h2 class="observe"><span>SPRAWDŹ</span><br>NASZE USŁUGI</h2>
-    </div>
-    <div class="tabs delay tab-switch observe">
-        <div class="col-7 tab-overflow">
-            <ul class="tab-button__container ">
-                <li class="tab-button__item delay__item not-visible" onclick="switchTab(this, 0)" data-status="active">
-
-                    <div class="tab-button__text ">
-                        <i class="icon-shopping-cart" style="float:left"></i><h3>Strony www</h3>
-                        <p>Profesjonalne, nowoczesne i ładne strony oraz serwisy.</p>
-                    </div>
-                </li>
-                <li class="tab-button__item delay__item not-visible" onclick="switchTab(this, 1)">
-                    <div class="tab-button__icon">
-                        <i class="icon-shopping-cart"></i>
-                    </div>
-                    <div class="tab-button__text">
-                        <h3>Sklepy Internetowe</h3>
-                        <p>Nowoczesne, dopracowane i responsywne sklepy.</p>
-                    </div>
-                </li>
-                <li class="tab-button__item delay__item not-visible" onclick="switchTab(this, 2)">
-                    <div class="tab-button__icon">
-                        <i class="icon-paint-brush"></i>
-                    </div>
-                    <div class="tab-button__text">
-                        <h3>Pozycjonowanie</h3>
-                        <p>I can make your website to run with highest potential.</p>
-                    </div>
-                </li>
-                <li class="tab-button__item delay__item not-visible" onclick="switchTab(this, 3)">
-                    <div class="tab-button__icon">
-                        <i class="icon-paint-brush"></i>
-                    </div>
-                    <div class="tab-button__text">
-                        <h3>Grafika i loga</h3>
-                        <p>Grafika reklamowa, projekty nowoczesnego logo dla firm.</p>
-                    </div>
-                </li>
-                <li class="tab-button__item delay__item not-visible" onclick="switchTab(this, 4)">
-                    <div class="tab-button__icon">
-                        <i class="icon-paint-brush"></i>
-                    </div>
-                    <div class="tab-button__text">
-                        <h3>Foto & Wideo</h3>
-                        <p>Filmy reklamowe, fotografia zwykła i produktowa.</p>
-                    </div>
-                </li>
-                <li class="tab-button__item delay__item not-visible" onclick="switchTab(this, 5)">
-                    <div class="tab-button__icon">
-                        <i class="icon-paint-brush"></i>
-                    </div>
-                    <div class="tab-button__text">
-                        <h3>e-commerce</h3>
-                        <p>Kompleksowe wdrożenia na Allegro, eBay, Amazon i inne.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="tab-content__container col-5 observe">
-            <article class="tab-content__1 tab-content__item" data-status="active">
-                <div class="overflow-hidden">
-                    <img class="webpage-1" src="img/services/webpage-1.png" width="100%" alt="">
-                    <div class="transparent-iphone">
-                        <div class="transparent-iphone__interior">
-                            <img src="img/services/transparent-iphone-x_FHD.png" height="100%" alt="">
-                            <div class="test">
-                                <div class="test2">
-                                    <img class="webpage-2" src="img/services/webpage-2_FHD.png" width="100%" alt="">
-                                </div>
+                            <div>
+                                EN
                             </div>
                         </div>
                     </div>
-                    <img src="img/services/shape3.png" alt="" class="triangle-shape">
                 </div>
-            </article>
-            <article class="tab-content__2 tab-content__item">
-                <img src="img/services/shop.png" height="100%" alt="">
-            </article>
-            <article class="tab-content__3 tab-content__item">
-                <img src="img/services/seo.jpg" alt="">
-            </article>
-            <article class="tab-content__4 tab-content__item align-items-center">
-                <div>
-                    <img src="img/services/coffe-cup-bag.jpg" style="width: 100%" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet deleniti distinctio facilis id placeat quis, rerum sit temporibus?</p>
-                    <button>Więcej informacji</button>
+            </div>
+            <!-- slider start -->
+            <div class="hero">
+                <div class="slide slide" data-status="active">
+                    <div class="slide__right-block">
+                    </div>
+                    <div class="slide__ring-small">
+                        <img src="https://res.cloudinary.com/ventru-pl/image/upload/v1540567368/Ventru.pl/man-ring-small.png"
+                             alt="okrąg mały" height="100%">
+                    </div>
+                    <div class="slide__ring-big">
+                        <img src="https://res.cloudinary.com/ventru-pl/image/upload/v1540567368/Ventru.pl/man-ring-big.png"
+                             alt="okrąg duży" height="100%">
+                    </div>
+                    <div class="slide__man">
+                        <picture>
+                            <source media="(max-width: 500px)"
+                                    srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540562306/Ventru.pl/man-400.png 1x,
+                                        https://res.cloudinary.com/ventru-pl/image/upload/v1540562308/Ventru.pl/man-800.png 2x,
+                                        https://res.cloudinary.com/ventru-pl/image/upload/v1540562308/Ventru.pl/man-hd.png 3x">
+                            <source media="(max-width: 1366px)"
+                                    srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540562308/Ventru.pl/man-800.png 1x,
+                                        https://res.cloudinary.com/ventru-pl/image/upload/v1540562308/Ventru.pl/man-hd.png 2x">
+                            <img src="https://res.cloudinary.com/ventru-pl/image/upload/v1540562308/Ventru.pl/man-hd.png"
+                                 height="100%" alt="uśmiechnięty mężczyzna przy biurku">
+                        </picture>
+                    </div>
+                    <!--                <div class="slide__text-container">-->
+                    <div class="slide__text-container">
+                        <h1>
+                            <span class="slide__text-mask d-inline-flex"><span>PROFESJONALNE</span></span><br>
+                            <span class="position-relative d-inline-flex w-100" style="overflow-y: hidden">
+                                <span class="h1-bottom-line slide__text-mask item-move-up"><span>STRONY <span>WWW</span></span></span>
+                                <span class="h1-bottom-line h1-third-line item-move-up"><span><span>SKLEPY</span> INTERNETOWE</span></span>
+                            </span>
+                            <!--                            <span class="slide__text-mask"><span class="item-fade-in">PROFESJONALNE</span></span><br>-->
+                            <!--                            <span class="" style="position: relative; display: inline-flex; overflow-y: hidden">-->
+                            <!--                                <span class="h1-bottom-line slide__text-mask item-move-up">STRONY <span>WWW</span></span>-->
+                            <!--                                <span class="h1-bottom-line h1-third-line item-move-up"><span>SKLEPY</span> INTERNETOWE</span>-->
+                            <!--                            </span>-->
+                        </h1>
+                        <p>
+                            <span>Otworzymy Ci zupełnie nowe i oryginalne drogi</span>
+                            <br>
+                            <span>by dotrzeć do odbiorcy w internecie...</span>
+                        </p>
+                        <button class="button-default" onclick="start()" role="button">Rozpocznij</button>
+                    </div>
                 </div>
-            </article>
-            <article class="tab-content__5 tab-content__item w-100">
-                <div style="position:relative; width:100%"><iframe src="https://player.vimeo.com/video/148597796?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                <!-- end single slider -->
 
-            </article>
-            <article class="tab-content__6 tab-content__item">
-                <img src="http://deeptem.com/events/wp-content/uploads/2018/03/dp-events-conf-hero1.png" alt="">
-            </article>
+                <div class="slide" data-status="unactive"> <!-- tu była klasa lazy -->
+                    <div class="slide__right-block">
+                    </div>
+                    <div class="slide__ring-small">
+                        <img src="https://res.cloudinary.com/ventru-pl/image/upload/v1540566539/Ventru.pl/woman-ring-small.png"
+                             alt="okrąg mały" height="100%">
+                    </div>
+                    <div class="slide__ring-big">
+                        <img src="https://res.cloudinary.com/ventru-pl/image/upload/v1540567572/Ventru.pl/woman-ring-big.png"
+                             alt="okrąg duży" height="100%">
+                    </div>
+                    <div class="slide__woman">
+                        <picture>
+                            <!--                            <source media="(max-width: 500px)"-->
+                            <!--                                    srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540603498/Ventru.pl/woman-hd.png 1x,-->
+                            <!--                                        https://res.cloudinary.com/ventru-pl/image/upload/v1540603498/Ventru.pl/woman-hd.png 2x,-->
+                            <!--                                        https://res.cloudinary.com/ventru-pl/image/upload/v1540603498/Ventru.pl/woman-hfd.png 3x">-->
+                            <!--                            <source media="(max-width: 1366px)"-->
+                            <!--                                    srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540603498/Ventru.pl/woman-hd.png 1x,-->
+                            <!--                                        https://res.cloudinary.com/ventru-pl/image/upload/v1540683269/Ventru.pl/woman-fhd.png 2x">-->
+                            <img src="https://res.cloudinary.com/ventru-pl/image/upload/v1540683269/Ventru.pl/woman-fhd.png"
+                                 height="100%" alt="zamyślona kobieta patrząca w górę">
+                        </picture>
+                    </div>
+                    <div class="slide__text-container slide-2">
+                        <h1>
+                            <span class="slide__text-mask d-inline-flex"><span>KOMPLEKSOWE</span></span><br>
+                            <span class="h1-bottom-line slide__text-mask d-inline-flex"
+                                  style="white-space: nowrap"><span>WDROŻENIA <span>E-COMMERCE</span></span></span>
+                        </h1>
+                        <p>
+                            <span>Pomożemy skutecznie przenieść Twoją firmę</span>
+                            <br>
+                            <span>w cyfrowy świat internetu...</span>
+                        </p>
+                        <button class="button-default" onclick="start()" role="button">Rozpocznij</button>
+                    </div>
+                </div>
+                <!-- end single slider -->
+
+                <!-- slider navigation -->
+                <div class="slider-nav d-flex align-items-center">
+                    <button class="prev slider-nav__item" onclick="changeSlide(-1); pauseSlider();" role="button">🠐
+                    </button>
+                    <button class="next slider-nav__item" onclick="changeSlide(1); pauseSlider();" role="button">🠂
+                    </button>
+
+                </div>
+            </div>
         </div>
+    </header>
+    <!--Header Area End-->
 
-    </div>
-    <div class="col-6 ">
-        <button class="show-more" onclick="showMoreServices()" style="position: relative">Więcej usług</button> <!-- Why must be relative? -->
-    </div>
-
-</section>
-<!--
-================================
-Services end
-=================================
- -->
-
-<!--
-================================
-Nowoczesna wizytówka start
-=================================
- -->
-<section class="mobile">
-    <div class="container d-flex delay observe">
-        <div class="col-7 delay__item not-visible right">
-            <picture>
-                <source media="(max-width: 400px)"
-                        srcset="img/iphone.png 1x,
-                            img/iphone.png 2x">
+    <!--
+    ================================
+    Agency Start
+    =================================
+     -->
+    <section class="container agency d-flex justify-content-center wrap" style="margin-bottom:100px">
+        <div class="col-12 col-md-5 col-lg-6 agency__left">
+            <picture class="lazy">
+                <source media="(max-width: 500px)"
+                        srcset=""
+                        data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540576453/Ventru.pl/desk-plant-hd.jpg 1x,
+                            https://res.cloudinary.com/ventru-pl/image/upload/v1540576453/Ventru.pl/desk-plant-hd.jpg 2x,
+                            https://res.cloudinary.com/ventru-pl/image/upload/v1540576453/Ventru.pl/desk-plant-fhd.jpg 3x,
+                            https://res.cloudinary.com/ventru-pl/image/upload/v1540576453/Ventru.pl/desk-plant-fhd.jpg 4x">
                 <source media="(max-width: 1366px)"
-                        srcset="img/iphone.png 1x,
-                            img/iphone.png 2x">
-                <img src="img/iphone.png" alt="iPhone X">
+                        srcset=""
+                        data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540576453/Ventru.pl/desk-plant-hd.jpg 1x,
+                            https://res.cloudinary.com/ventru-pl/image/upload/v1540576453/Ventru.pl/desk-plant-fhd.jpg 2x">
+                <img src=""
+                     data-src="https://res.cloudinary.com/ventru-pl/image/upload/v1540576453/Ventru.pl/desk-plant-fhd.jpg"
+                     width="100%" alt="laptop i telefon na biurku">
             </picture>
         </div>
-        <div class="col-5 mobile-right">
-            <h2 class="text-center observe"><span>Twoja</span><br> NOWOCZESNA WIZYTÓWKA</h2>
-            <div class="delay__item not-visible triangle-shape">
-                <p>Wszechobecność smartfonów i powszechny dostęp do mobilnego internetu sprawiają, że Twoja strona internetowa może służyć za nowoczesną, interaktywną formę wizytówki. Dzięki naszemu doświadczeniu oraz ogromnej liczbie pomysłów doradzimy Ci jak wykorzystać internet by zwiększyć liczbę klientów i zyskać przewagę nad konkurencją.</p>
-                <p>Łatwiej dotrzyj do swoich klientow</p>
-                <p>Zaimponuj nowoczesna strona</p>
-                <p>interaktywna wizytowka</p>
+        <div class="col-12 col-md-7 col-lg-6 agency__right d-flex justify-content-center align-content-center wrap scout scout-container scout-100 direction-up">
+            <h2 class="white-h2 scout-item" data-scout-distance="120" data-scout-delay="50"><span>JESTEŚMY</span><br>
+                AGENCJĄ INTERAKTYWNĄ</h2>
+            <p class="scout-item">
+                Tworzymy zarówno małe, proste projekty, jak i skomplikowane serwisy, które są szybkie, łatwo
+                wyszukiwalne w google, intuicyjne w obsłudze, atrakcyjne wizualnie i dostosowana do urządzeń mobilnych.
+                Szczycimy się wysoką etyką pracy, uczciwością i pragniemy aby nasze realizacje zadowoliły każdego
+                klienta. Posiadamy ogromną wiedzę i umiejętności wsparte motywacją bycia najlepszymi na rynku.
+            </p>
+        </div>
+    </section>
+    <!-- Agency End -->
+
+
+    <!--
+    ================================
+    Services start
+    =================================
+     -->
+    <section class="container text-center services scout scout-container scout-50" data-scout-delay="180"
+             data-scout-script="setupTabs()">
+        <div class="col-lg-6 services-title">
+            <h2 class="scout-item direction-up" data-scout-distance="120"><span>SPRAWDŹ</span><br>NASZE USŁUGI</h2>
+        </div>
+        <div class="tabs tab-switch">
+            <div class="col-lg-7 tab-overflow">
+                <ul class="tab-button__container">
+                    <li class="tab-button__item scout-item" onclick="switchTab(this, 0)"
+                        data-status="active">
+                        <i class="icon-html-five"></i>
+                        <h3 class="white-on-hover">Strony www</h3>
+                        <p>Profesjonalne, nowoczesne i przemyślane strony oraz serwisy.</p>
+                    </li>
+                    <li class="tab-button__item scout-item" onclick="switchTab(this, 1)">
+                        <i class="icon-cart"></i>
+                        <h3 class="white-on-hover">Sklepy Internetowe</h3>
+                        <p>Dopracowane, atrakcyjne wizualnie i responsywne sklepy.</p>
+                    </li>
+                    <li class="tab-button__item scout-item" onclick="switchTab(this, 2)">
+                        <i class="icon-stats-dots"></i>
+                        <h3 class="white-on-hover">Pozycjonowanie</h3>
+                        <p>Twoja strona będzie dobrze widoczna w wyszukiwarce google.</p>
+                    </li>
+                    <li class="tab-button__item scout-item" onclick="switchTab(this, 3)">
+                        <i class="icon-images"></i>
+                        <h3 class="white-on-hover">Grafika i loga</h3>
+                        <p>Grafika komputerowa, reklamowa, projekty nowoczesnego logo dla firm.</p>
+                    </li>
+                    <li class="tab-button__item" onclick="switchTab(this, 4)">
+                        <i class="icon-camera"></i>
+                        <h3 class="white-on-hover">Foto & Wideo</h3>
+                        <p>Filmy reklamowe, fotografia zwykła i produktowa.</p>
+                    </li>
+                    <li class="tab-button__item" onclick="switchTab(this, 5)">
+                        <i class="icon-tree"></i>
+                        <h3>Automatyzacja</h3>
+                        <p>Informatyzacja i przyspieszanie różnych procesów w firmach.</p>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-</section>
-<!--
-================================
-Nowoczesna wizytówka end
-=================================
- -->
 
-
-<!--
-================================
-Portfolio start
-=================================
- -->
-<section class="portfolio">
-    <div class="container d-flex wrap">
-        <div class="col-12 text-center">
-            <h2 class="observe"><span>ZOBACZ NASZE</span><br> OSTATNIE REALIZACJE</h2>
-        </div>
-        <div class="col-6" style="position: relative; height: 53vh; margin-right: 80px">
-            <img style="position: absolute; bottom: 0; left: 0; z-index: 2; height: 100%" src="img/portfolio/imac_FHD.png"  width="auto" alt="">
-            <img style="position: absolute; bottom: 0; right: 0; z-index: 3; height: 60%"  src="img/portfolio/notebook_FHD.png"  width="auto" alt="">
-            <img style="position: absolute; bottom: 10px; right: 5px; border-radius: 15px; z-index: 4; height: 41%" src="img/portfolio/iphonex.png" width="auto" alt="">
-            <img style="position: absolute; bottom: 0; right: 0; z-index: 5; height: 45%" src="img/services/transparent-iphone-x_FHD.png" width="auto" alt="">
-        </div>
-        <div class="col-4 d-flex direction-column justify-content-center align-items-start">
-            <h4>Zakres prac</h4>
-            <p>Strona internetowa pszczelarstwa ekologicznego dostosowana do urządzeń mobilnych</p>
-            <p>Sklep internetowy zintegrowany ze stroną</p>
-            <p>Grafiki, zdjęcia produktów oraz treść</p>
-            <p>Doradziliśmy klientowi w zakresie zdobywania klientów drogą internetową</p>
-        </div>
-        <div class="d-flex col-12 observe delay text-center" style="margin-bottom:50px; margin-top:120px">
-            <div class="portfolio__item col-4 delay__item not-visible">
-                <h4>Salon urody</h4>
-                <div class="portfolio__item-content">
-                    <div>
-                        <img src="img/portfolio/salon-kosmetyczny.jpg" width="100%" alt="">
+            <div class="tab-content__container col-lg-5 observe scout scout-75 direction-left lazy"
+                 data-scout-distance="30">
+                <article class="tab-content__1 tab-content__item" data-status="active">
+                    <div class="overflow-hidden">
+                        <img class="webpage-1" data-src="img/services/webpage-1.png" width="100%" alt="">
+                        <div class="transparent-iphone">
+                            <div class="transparent-iphone__interior">
+                                <img data-src="img/services/transparent-iphone-x_FHD.png" height="100%" width="100%"
+                                     alt="">
+                                <div class="test">
+                                    <div class="test2">
+                                        <img class="webpage-2" data-src="img/services/webpage-2_FHD.png" width="100%"
+                                             alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img data-src="img/services/shape3.png" alt="" class="triangle-shape">
                     </div>
-                </div>
-            </div>
-            <div class="portfolio__item col-4 delay__item not-visible">
-                <h4>Pszczelarstwo ekologiczne. Strona i sklep.</h4>
-                <div class="portfolio__item-content">
-                    <div>
-                        <img src="img/portfolio/restauracja.jpg" width="100%" alt="">
+                </article>
+                <article class="tab-content__2 tab-content__item">
+                    <img data-src="img/services/shop.png" height="100%" alt="">
+                </article>
+                <article class="tab-content__3 tab-content__item direction-column automatization">
+                    <picture>
+                        <source media="(max-width: 500px)"
+                                data-srcset="img/services/seo_700.png 1x,
+                                    img/services/seo_1050.png 2x">
+                        <source media="(max-width: 1366px)"
+                                data-srcset="img/services/seo_700.png 1x,
+                                    img/services/seo_1050.png 2x">
+                        <source media="(max-width: 1920px)"
+                                data-srcset="img/services/seo_700.png">
+                        <img data-src="img/services/seo_1400.png" alt="automatyzacja">
+                    </picture>
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minima!</p>
+                        <button class="button-default">Szczegóły 🠂</button>
                     </div>
-                </div>
-            </div>
-            <div class="portfolio__item col-4 delay__item not-visible">
-                <h4>Przedszkole</h4>
-                <div class="portfolio__item-content">
+                </article>
+                <article class="tab-content__4 tab-content__item align-items-center">
                     <div>
-                        <img src="img/portfolio/przedszkole.jpg" width="100%" alt="">
+                        <img data-src="img/services/coffe-cup-bag.jpg" style="width: 100%" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet deleniti distinctio
+                            facilis id placeat quis, rerum sit temporibus?</p>
+                        <button class="button-default">Więcej informacji</button>
                     </div>
-                </div>
+                </article>
+                <article class="tab-content__5 tab-content__item w-100">
+                    <!--<div style="position:relative; width:100%">-->
+                    <!--<iframe data-src="https://player.vimeo.com/video/148597796?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>-->
+                    <!--</iframe>-->
+                    <!--</div>-->
+                    <!--<script src="https://player.vimeo.com/api/player.js"></script>-->
+                </article>
+                <article class="tab-content__6 tab-content__item direction-column automatization">
+                    <picture>
+                        <source media="(max-width: 500px)"
+                                data-srcset="img/services/automatization_700.png 1x,
+                                    img/services/automatization_1050.png 2x">
+                        <source media="(max-width: 1366px)"
+                                data-srcset="img/services/automatization_700.png 1x,
+                                    img/services/automatization_1050.png 2x">
+                        <source media="(max-width: 1920px)"
+                                data-srcset="img/services/automatization_700.png">
+                        <img data-src="img/services/automatization_1400.png" alt="automatyzacja">
+                    </picture>
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minima!</p>
+                        <button class="button-default">Szczegóły 🠂</button>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+        <div class="col-lg-6 ">
+            <button class="button-default show-more" onclick="showMoreServices()" style="position: relative">Więcej
+                usług
+            </button>
+            <!-- Why must be relative? -->
+        </div>
+
+    </section>
+    <!-- Services end -->
+
+    <!--
+    ================================
+    Nowoczesna wizytówka start
+    =================================
+     -->
+    <section class="mobile container d-flex scout scout-100 scout-container ">
+        <div class="col-12 col-lg-6 order-md-1 text-center">
+            <h2 class="scout-item" data-scout-distance="120" data-scout-delay="50"><span>Twoja</span><br> NOWOCZESNA
+                WIZYTÓWKA</h2>
+            <div class="scout-item direction-up triangle-shape d-flex justify-content-center">
+                <p>
+                    Sprawimy, że Twoja strona internetowa będzie służyć za nowoczesną, interaktywną formę wizytówki.
+                    Łatwiej dotrzesz do klientów i zachęcisz ich do skorzystania z Twoich usług. Poprawne jej
+                    wykonanie daje ogromną przwagę nad konkurencją.
+                </p>
             </div>
         </div>
-    </div>
-</section>
-<!--
-================================
-Portfolio end
-=================================
- -->
-
-<!--
-================================
-Our process start
-=================================
- -->
-<section class="process text-center">
-    <div class="container">
-        <div class="col-12 d-flex justify-content-end">
-            <div class="col-4">
-                <h2 class="observe white-h2"><span>POZNAJ NASZ</span><br> PROCES PRACY</h2>
-            </div>
+        <div class="col-12 col-lg-6 scout-item direction-left">
+            <picture class="lazy">
+                <source media="(max-width: 500px)"
+                        data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540682532/Ventru.pl/iphone-x-hd.png 1x,
+                            https://res.cloudinary.com/ventru-pl/image/upload/v1540682337/Ventru.pl/iphone-x-fhd.png 2x,
+                            https://res.cloudinary.com/ventru-pl/image/upload/v1540682337/Ventru.pl/iphone-x-fhd.png 3x">
+                <source media="(max-width: 1366px)"
+                        data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1540682532/Ventru.pl/iphone-x-hd.png 1x,
+                            https://res.cloudinary.com/ventru-pl/image/upload/v1540682337/Ventru.pl/iphone-x-fhd.png 2x">
+                <img data-src="https://res.cloudinary.com/ventru-pl/image/upload/v1540682337/Ventru.pl/iphone-x-fhd.png"
+                     alt="iPhone X">
+            </picture>
         </div>
+    </section>
+    <!-- Nowoczesna wizytówka end -->
 
-        <div class="d-flex">
-            <div class="col-7 process-left">
-                <div class="process-left__container">
-                    <div class="process-left__container__item">
-                        <div class="interior">
-                            <img src="img/consultation.png" alt="">
+
+    <!--
+    ================================
+    Portfolio start
+    =================================
+     -->
+    <section class="portfolio">
+        <div class="container d-flex wrap justify-content-center">
+            <h2 class="text-center scout mb-0"><span>ZOBACZ NASZE</span><br> OSTATNIE REALIZACJE</h2>
+            <!--<div class="col-lg-6" style="position: relative; height: 53vh; margin-right: 80px">-->
+            <!--<img style="position: absolute; bottom: 0; left: 0; z-index: 2; height: 100%" src="img/portfolio/imac_FHD.png"  width="auto" alt="">-->
+            <!--<img style="position: absolute; bottom: 0; right: 0; z-index: 3; height: 60%"  src="img/portfolio/notebook_FHD.png"  width="auto" alt="">-->
+            <!--<img style="position: absolute; bottom: 10px; right: 5px; border-radius: 15px; z-index: 4; height: 41%" src="img/portfolio/iphonex.png" width="auto" alt="">-->
+            <!--<img style="position: absolute; bottom: 0; right: 0; z-index: 5; height: 45%" src="img/services/transparent-iphone-x_FHD.png" width="auto" alt="">-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 d-flex direction-column justify-content-center align-items-start">-->
+            <!--<h4>Zakres prac</h4>-->
+            <!--<p>Strona internetowa pszczelarstwa ekologicznego dostosowana do urządzeń mobilnych</p>-->
+            <!--<p>Sklep internetowy zintegrowany ze stroną</p>-->
+            <!--<p>Grafiki, zdjęcia produktów oraz treść</p>-->
+            <!--<p>Doradziliśmy klientowi w zakresie zdobywania klientów drogą internetową</p>-->
+            <!--</div>-->
+
+
+            <div id="mySwipe" class="swipe col-12">
+                <div class="swipe-wrap d-md-flex col-lg-12 observe delay text-center"
+                     style="margin-bottom:50px; margin-top:120px">
+                    <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                        <h4>Salon urody</h4>
+                        <div class="portfolio__item-content">
+                            <div>
+                                <img src="https://hotello.scdn6.secure.raxcdn.com/wp-content/themes/landing/assets/optimized_images/1.jpg"
+                                     width="100%" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="process-left__container__item d-none">
-                        <div class="interior">
-                            <picture>
-                                <source media="(max-width: 400px)"
-                                        srcset="img/process/build-process_600.png 1x,
+                    <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                        <h4>Salon urody</h4>
+                        <div class="portfolio__item-content">
+                            <div>
+                                <img src="https://hotello.scdn6.secure.raxcdn.com/wp-content/themes/landing/assets/optimized_images/1.jpg"
+                                     width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                        <h4>Salon urody</h4>
+                        <div class="portfolio__item-content">
+                            <div>
+                                <img src="https://hotello.scdn6.secure.raxcdn.com/wp-content/themes/landing/assets/optimized_images/1.jpg"
+                                     width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-block d-md-flex col-lg-12 observe delay text-center"
+                 style="margin-bottom:50px; margin-top:120px">
+                <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                    <h4>Salon urody</h4>
+                    <div class="portfolio__item-content">
+                        <div>
+                            <img src="https://hotello.scdn6.secure.raxcdn.com/wp-content/themes/landing/assets/optimized_images/1.jpg"
+                                 width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                    <h4>Pszczelarstwo ekologiczne. Strona i sklep.</h4>
+                    <div class="portfolio__item-content">
+                        <div>
+                            <img src="https://hotello.scdn6.secure.raxcdn.com/wp-content/themes/landing/assets/optimized_images/3.jpg"
+                                 width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                    <h4>Przedszkole</h4>
+                    <div class="portfolio__item-content">
+                        <div>
+                            <img src="https://hotello.scdn6.secure.raxcdn.com/wp-content/themes/landing/assets/optimized_images/3.jpg"
+                                 width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-12 observe delay text-center" style="margin-bottom:50px; margin-top:120px">
+                <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                    <h4>Salon urody</h4>
+                    <div class="portfolio__item-content">
+                        <div>
+                            <img src="img/portfolio/salon-kosmetyczny.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                    <h4>Pszczelarstwo ekologiczne. Strona i sklep.</h4>
+                    <div class="portfolio__item-content">
+                        <div>
+                            <img src="img/portfolio/restauracja.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item col-12 col-md-6 col-lg-4 delay__item not-visible">
+                    <h4>Przedszkole</h4>
+                    <div class="portfolio__item-content">
+                        <div>
+                            <img src="img/portfolio/przedszkole.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    ================================
+    Portfolio end
+    =================================
+     -->
+
+    <!--
+    ================================
+    Our process start
+    =================================
+     -->
+    <section class="process text-center">
+        <div class="container">
+            <div class="col-lg-12 d-flex justify-content-end">
+                <div class="col-lg-4">
+                    <h2 class="observe white-h2"><span>POZNAJ NASZ</span><br> PROCES PRACY</h2>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="col-lg-7 process-left">
+                    <div class="process-left__container lazy">
+                        <div class="process-left__container__item">
+                            <div class="interior">
+                                <img data-src="img/consultation.png" alt="">
+                            </div>
+                        </div>
+                        <div class="process-left__container__item d-none">
+                            <div class="interior">
+                                <picture>
+                                    <source media="(max-width: 500px)"
+                                            data-srcset="img/process/build-process_600.png 1x,
                                                 img/process/build-process_900.png 2x">
-                                <source media="(max-width: 1366px)"
-                                        srcset="img/process/build-process_600.png 1x,
+                                    <source media="(max-width: 1366px)"
+                                            data-srcset="img/process/build-process_600.png 1x,
                                                 img/process/build-process_900.png 2x">
-                                <source media="(max-width: 1920px)"
-                                        srcset="img/process/build-process_600.png">
-                                <img src="img/process/build-process_1200.png" alt="grafika programującego mężczyzny">
-                            </picture>
+                                    <source media="(max-width: 1920px)"
+                                            data-srcset="img/process/build-process_600.png">
+                                    <img data-src="img/process/build-process_1200.png" alt="grafika budowa strony">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="process-left__container__item d-none">
-                        <div class="interior">
-                            <img class="process__panel" src="img/process/panel_FHD.png" alt="">
+                        <div class="process-left__container__item d-none">
+                            <div class="interior">
+                                <picture>
+                                    <source media="(max-width: 500px)"
+                                            data-srcset="img/process/implementation_600.png 1x,
+                                                img/process/implementation_900.png 2x">
+                                    <source media="(max-width: 1366px)"
+                                            data-srcset="img/process/implementation_600.png 1x,
+                                                img/process/implementation_900.png 2x">
+                                    <source media="(max-width: 1920px)"
+                                            data-srcset="img/process/implementation_600.png">
+                                    <img data-src="img/process/implementation_1200.png"
+                                         alt="grafika programującego mężczyzny">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="process-left__container__item d-none">
-                        <div class="interior">
-                            <img src="img/consultation.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex direction-column col-5 align-items-end justify-content-center">
-                <div class="process__item col-9 col-xxl-8 d-flex direction-column" data-content="0">
-                    <div class="col-12 d-flex align-items-center">
-                        <div class="process__number">01</div>
-                        <h3>Konsultacja</h3>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="col-3 d-flex align-items-center">
-                            <img class="animated-svg d-none" src="img/idea_animated.svg" alt="">
-                        </div>
-                        <div class="col-9">
-                            <p>Ustalimy wygląd oraz funkcje strony. Zaproponujemy nowoczesne rozwiązania na miarę Twojego budżetu.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="process__item col-9 col-xxl-8  d-flex direction-column" data-content="1">
-                    <div class="col-12 d-flex align-items-center">
-                        <div class="process__number">02</div>
-                        <h3>Etap Tworzenia</h3>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="col-3 d-flex align-items-center">
-                            <img class="animated-svg d-none" src="img/gear_animated.svg" alt="">
-                        </div>
-                        <div class="col-9">
-                            <p>Otrzymasz dostęp do wygodnego panelu klienta, gdzie na bieżąco możesz śledzić postęp prac i zgłaszać uwagi.</p>
+                        <div class="process-left__container__item d-none">
+                            <div class="interior">
+                                <picture>
+                                    <source media="(max-width: 500px)"
+                                            data-srcset="img/process/care_600.png 1x,
+                                                img/process/care_900.png 2x">
+                                    <source media="(max-width: 1366px)"
+                                            data-srcset="img/process/care_600.png 1x,
+                                                img/process/care_900.png 2x">
+                                    <source media="(max-width: 1920px)"
+                                            data-srcset="img/process/care_600.png">
+                                    <img data-src="img/process/care_1200.png" alt="grafika serwis">
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="process__item col-9 col-xxl-8 d-flex direction-column" data-content="2">
-                    <div class="col-12 d-flex align-items-center">
-                        <div class="process__number">03</div>
-                        <h3>Wdrożenie</h3>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="col-3 d-flex align-items-center">
-                            <img class="animated-svg d-none" src="img/upload_animated.svg" alt="">
+                <div class="d-flex direction-column col-lg-5 align-items-end justify-content-center">
+                    <div class="process__item col-lg-10 col-xxl-8 d-flex direction-column" data-content="0">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <div class="process__number">01</div>
+                            <h3>Konsultacja</h3>
                         </div>
-                        <div class="col-9">
-                            <p>Wprowadzimy ostatnie poprawki i w razie potrzeby przeszkolimy z obsługi. Rok utrzymania strony na serwerze otrzymasz gratis!</p>
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-3 d-flex align-items-center">
+                                <img class="animated-svg d-none" src="img/idea_animated.svg" alt="">
+                            </div>
+                            <div class="col-lg-9">
+                                <p>Ustalimy wygląd oraz funkcje strony. Zaproponujemy nowoczesne rozwiązania na miarę
+                                    Twojego budżetu.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="process__item col-9 col-xxl-8 d-flex direction-column" data-content="3">
-                    <div class="col-12 d-flex align-items-center">
-                        <div class="process__number">04</div>
-                        <h3>Obsługa serwisowa</h3>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="col-3 d-flex align-items-center">
-                            <img class="animated-svg d-none" src="img/service_animated.svg" alt="">
+                    <div class="process__item col-lg-10 col-xxl-8  d-flex direction-column" data-content="1">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <div class="process__number">02</div>
+                            <h3>Etap Tworzenia</h3>
                         </div>
-                        <div class="col-9">
-                            <p>Bezterminowa gwarancja niezaowodności (odnawiana co rok przy każdorazowym opłaceniu serwera).</p>
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-3 d-flex align-items-center">
+                                <img class="animated-svg d-none" src="img/gear_animated.svg" alt="">
+                            </div>
+                            <div class="col-lg-9">
+                                <p>Otrzymasz dostęp do wygodnego panelu klienta, gdzie na bieżąco możesz śledzić postęp
+                                    prac i zgłaszać uwagi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__item col-lg-10 col-xxl-8 d-flex direction-column" data-content="2">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <div class="process__number">03</div>
+                            <h3>Wdrożenie</h3>
+                        </div>
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-3 d-flex align-items-center">
+                                <img class="animated-svg d-none" src="img/upload_animated.svg" alt="">
+                            </div>
+                            <div class="col-lg-9">
+                                <p>Wprowadzimy ostatnie poprawki i w razie potrzeby przeszkolimy z obsługi. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__item col-lg-10 col-xxl-8 d-flex direction-column" data-content="3">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <div class="process__number">04</div>
+                            <h3>Obsługa serwisowa</h3>
+                        </div>
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-3 d-flex align-items-center">
+                                <img class="animated-svg d-none" src="img/service_animated.svg" alt="">
+                            </div>
+                            <div class="col-lg-9">
+                                <p>Bezterminowa gwarancja niezaowodności (odnawiana co rok przy każdorazowym opłaceniu
+                                    serwera). Rok hostingu otrzymasz gratis!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--
-================================
-Our process end
-=================================
- -->
+    </section>
+    <!--
+    ================================
+    Our process end
+    =================================
+     -->
 
-<!--
-================================
-Footer start
-=================================
- -->
-<footer>
-    <div class="container">
-        <div class="col-4">
-            <h3>Adres:</h3>
-            <p>Ventru</p>
-            <p>Biała 117</p>
-            <p>98-332 Rząśnia</p>
-            <h3>E-mail</h3>
-            <a href="mailto:kontakt@ventru.pl">kontakt@ventru.pl</a>
-            <h3>Telefon</h3>
-            <a href="tel:791651306">791-651-306</a>
+
+    <!--
+    ================================
+    Benefits START
+    =================================
+     -->
+
+
+    <!--<section class="benefits" style="padding: 80px 0">-->
+    <!--<div class="line"></div>-->
+    <!--<div class="line"></div>-->
+    <!--<div class="line"></div>-->
+    <!--<div class="line"></div>-->
+    <!--<div class="container d-flex">-->
+    <!--<div class="col-lg-6 d-flex justify-content-center align-items-center">-->
+    <!--<img src="http://cdn.deeptem.com/corporate/wp-content/uploads/2017/08/dp-cpr-p08.png" alt="">-->
+
+    <!--</div>-->
+    <!--<div class="col-lg-6 text-center">-->
+    <!--<h2 class="observe"><span>UMÓW SIĘ NA</span><br>BEZPŁATNĄ KONSULTACJĘ</h2>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</section>-->
+
+
+    <section class="benefits scout scout-100 scout-container" style="padding: 80px 0">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="container d-flex h-100">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center  lazy position-relative h-100">
+                <div class="rectangle-shape"></div>
+                <picture class="picture-1 scout-item direction-up d-flex">
+                    <source media="(max-width: 500px)"
+                            data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1541177708/Ventru.pl/glasses-on-table_hd.jpg 1x,
+                                     https://res.cloudinary.com/ventru-pl/image/upload/v1541177709/Ventru.pl/glasses-on-table_fhd.jpg 2x,
+                                     https://res.cloudinary.com/ventru-pl/image/upload/v1541177709/Ventru.pl/glasses-on-table_4k.jpg 3x">
+                    <source media="(max-width: 1366px)"
+                            data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1541177708/Ventru.pl/glasses-on-table_hd.jpg 1x,
+                                     https://res.cloudinary.com/ventru-pl/image/upload/v1541177709/Ventru.pl/glasses-on-table_fhd.jpg 2x">
+                    <source media="(max-width: 1920px)"
+                            data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1541177709/Ventru.pl/glasses-on-table_fhd.jpg">
+                    <img data-src="https://res.cloudinary.com/ventru-pl/image/upload/v1541177709/Ventru.pl/glasses-on-table_4k.jpg"
+                         alt="okulary leżące na stole">
+                </picture>
+                <picture class="picture-2 scout-item direction-right d-flex">
+                    <source media="(max-width: 500px)"
+                            data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1541179461/Ventru.pl/man-woman_hd.jpg 1x,
+                                     https://res.cloudinary.com/ventru-pl/image/upload/v1541179462/Ventru.pl/man-woman_fhd.jpg 2x,
+                                     https://res.cloudinary.com/ventru-pl/image/upload/v1541179462/Ventru.pl/man-woman_4k.jpg 3x">
+                    <source media="(max-width: 1366px)"
+                            data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1541179461/Ventru.pl/man-woman_hd.jpg 1x,
+                                     https://res.cloudinary.com/ventru-pl/image/upload/v1541179462/Ventru.pl/man-woman_fhd.jpg 2x">
+                    <source media="(max-width: 1920px)"
+                            data-srcset="https://res.cloudinary.com/ventru-pl/image/upload/v1541179462/Ventru.pl/man-woman_fhd.jpg">
+                    <img data-src="https://res.cloudinary.com/ventru-pl/image/upload/v1541179462/Ventru.pl/man-woman_4k.jpg"
+                         alt="uśmiechnięta para patrząca w tablet">
+                </picture>
+            </div>
+            <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
+                <div>
+                    <h2 class="scout-item direction-up" data-scout-distance="120" data-scout-delay="50"><span>UMÓW SIĘ NA</span><br>BEZPŁATNĄ KONSULTACJĘ</h2>
+                    <p class="scout-item direction-up">
+                        Obiecujemy, że jako klient będziesz w 100% zadowolony albo nie weźmiemy pieniędzy za usługę.
+                        Sama konsultacja jest bezpłatna i niezobowiązująca. Nie mydlimy oczu, nie zawyżamy cen i zawsze
+                        staramy się być najlepsi na rynku.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-    </div>
+    </section>
 
-</footer>
-<!--
-================================
-Footer end
-=================================
- -->
+    <!--
+    ================================
+    Benefits END
+    =================================
+     -->
 
+    <!--
+    ================================
+    Contact Start
+    =================================
+     -->
+    <section class="contact-form">
+        <div class="container d-flex">
+            <div class="col-lg-5" style="margin-right:70px;">
+                <h2>Skontaktuj się</h2>
+                <p style="margin-bottom: 50px;">W godzinach pracy zazwyczaj odpowiadamy w przeciągu 30 minut</p>
+                <form id="contact-form" onsubmit="submitForm(); return false">
+                    <div class="d-flex col-lg-12" style="margin-bottom: 30px">
+                        <div class="col-lg-6 input d-flex">
+                            <label>
+                                <input class="name" type="text" name="name" minlength="3" maxlength="30"
+                                       placeholder="&nbsp;" required>
+                                <span class="custom-placeholder">Imię</span>
+                                <span class="input-border"></span>
+                            </label>
+                        </div>
+                        <div class="col-lg-6 input d-flex">
+                            <label>
+                                <input class="email" type="email" name="email" minlength="6" maxlength="40"
+                                       placeholder="&nbsp;" required>
+                                <span class="custom-placeholder">Email</span>
+                                <span class="input-border"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" style="margin-bottom: 30px">
+                        <label class="d-flex">
+                            <textarea class="message" cols="30" rows="6" name="message" minlength="15" maxlength="800"
+                                      placeholder="&nbsp;" data-gramm_editor="false" required></textarea>
+                            <span class="custom-placeholder">Treść wiadomości</span>
+                            <span class="input-border"></span>
+                        </label>
+                    </div>
+                    <button class="button-default" type="submit">Wyślij</button>
+                    <span class="confirmation-text"></span>
+                </form>
+            </div>
+            <div class="col-lg-7 d-flex justify-content-end">
+                <div class="col-lg-4 contact-info">
+                    <h4>Dane kontaktowe:</h4>
+                    <p>Ventru<br>
+                        Przemysłowa 14a/14<br>
+                        98-330 Pajęczno
+                    </p>
+                    <p class="d-flex justify-content-start align-items-center m-0">
+                        <i class="icon-mail"></i><a href="mailto:kontakt@ventru.pl">kontakt@ventru.pl</a>
+                    </p>
+                    <p class="d-flex justify-content-start align-items-center m-0" style="margin-bottom:50px">
+                        <i class="icon-mobile"></i><a href="tel:791651306">791 651 306</a>
+                    </p>
+                    <p class="mb-0">
+                        Pon-Sob: 8:00 - 19:30
+                    </p>
+                    <p class="m-0">
+                        Mail, Chat: 24/7
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <iframe src="" data-iframe="" width="100%" height="100%" style="border:none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-<p>DLA MOBILNYCH SWIPER SLIDER</p>
-<p>Nowoczesna wizytowka z kodem QR do strony internetowej</p>
-
-
-<button class="button">test</button>
-<div style="height:800px; width: 100%;"></div>
-
-contrubituion
-<a href="https://www.freeiconspng.com/img/45233">Apple iPhone X landing page blank png</a>
-transparent iphone x picture
-
-
+    <!--
+    ================================
+    Footer start
+    =================================
+     -->
+    <footer>
+        <div class="newsletter text-center observe">
+            <h3>Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed.</p>
+            <form action="newsletter-handler.php" method="post" class="d-flex">
+                <label class="d-flex">
+                    <input type="email" name="email" placeholder="&nbsp;" required>
+                    <span class="custom-placeholder">Email</span>
+                    <span class="input-border"></span>
+                    <button class="button-default" type="submit">ZAPISZ MNIE</button>
+                </label>
+            </form>
+        </div>
+        <div class="footer-content d-flex direction-column justify-content-center align-items-center">
+            <div class="d-flex">
+                <a href="">
+                    <i class="icon-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="icon-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="icon-youtube"></i>
+                </a>
+            </div>
+            <p>Ventru 2018 Wszelkie Prawa Zastrzeżone</p>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
+
+<!--<p>DLA MOBILNYCH SWIPER SLIDER</p>-->
+<!--<p>Nowoczesna wizytowka z kodem QR do strony internetowej</p>-->
+
+
+<!--<button class="button">test</button>-->
+
+<!--contrubituion-->
+<!--<a href="https://www.freeiconspng.com/img/45233">Apple iPhone X landing page blank png</a>-->
+<!--transparent iphone x picture
+
+
+
+
+TODO TWO h1 on a slider
+
+
+-->
+
